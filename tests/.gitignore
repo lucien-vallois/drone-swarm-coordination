@@ -1,0 +1,30 @@
+# Test artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Coverage reports
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Test results
+test-results/
+junit-*.xml
+
+# Profiling data
+*.prof
+*.lprof
+
+# Benchmark results
+benchmarks.txt
+performance.log
