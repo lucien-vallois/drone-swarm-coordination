@@ -1,5 +1,7 @@
 # Drone Swarm Coordination Simulator
 
+Maintained by [Lucien Vallois](https://github.com/lucien-vallois)
+
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-r128-orange.svg)](https://threejs.org/)
 [![WebSocket](https://img.shields.io/badge/WebSocket-Real--time-green.svg)](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
