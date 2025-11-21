@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Swarm Coordination Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="info-panel">
+            <h3>Drone Swarm Simulator</h3>
+            <div id="stats">
+                <div>Drones: <span id="drone-count">0</span></div>
+                <div>FPS: <span id="fps">0</span></div>
+                <div>Frame: <span id="frame">0</span></div>
+                <div>Leader: <span id="leader">None</span></div>
+            </div>
+        </div>
+
+        <div id="controls">
+            <div class="control-group">
+                <label>Simulation Control:</label>
+                <button id="start-btn">Start</button>
+                <button id="stop-btn">Stop</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+
+            <div class="control-group">
+                <label>Formation:</label>
+                <div id="formation-buttons">
+                    <div class="formation-option active" data-formation="circle">Circle</div>
+                    <div class="formation-option" data-formation="line">Line</div>
+                    <div class="formation-option" data-formation="grid">Grid</div>
+                    <div class="formation-option" data-formation="v_formation">V-Formation</div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Add Obstacle:</label>
+                <input type="number" id="obs-x" placeholder="X" step="1" value="50">
+                <input type="number" id="obs-y" placeholder="Y" step="1" value="50">
+                <input type="number" id="obs-z" placeholder="Z" step="1" value="10">
+                <input type="number" id="obs-radius" placeholder="Radius" step="0.5" value="3">
+                <button id="add-obstacle-btn">Add</button>
+            </div>
+        </div>
+
+        <div id="status">
+            <div id="connection-status">Connecting...</div>
+            <div id="simulation-status">Stopped</div>
+        </div>
+    </div>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="simulation.js"></script>
+</body>
+</html>
